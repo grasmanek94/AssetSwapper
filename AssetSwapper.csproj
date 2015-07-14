@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F167CB8E-F747-4EC6-A6A0-43066A25C563}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssetSwapper</RootNamespace>
+    <AssemblyName>AssetSwapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\empty.aa3" />
+    <None Include="Resources\empty.flac" />
+    <None Include="Resources\empty.ogg" />
+    <None Include="Resources\empty.pca" />
+    <None Include="Resources\empty.w64" />
+    <None Include="Resources\empty_aa3" />
+    <None Include="Resources\empty_ac3" />
+    <None Include="Resources\empty_aif" />
+    <None Include="Resources\empty_avi" />
+    <None Include="Resources\empty_bik" />
+    <None Include="Resources\empty_bmp" />
+    <None Include="Resources\empty_flac" />
+    <None Include="Resources\empty_gif" />
+    <None Include="Resources\empty_jpg" />
+    <None Include="Resources\empty_mp3" />
+    <None Include="Resources\empty_mp4" />
+    <None Include="Resources\empty_mpg" />
+    <None Include="Resources\empty_ogg" />
+    <None Include="Resources\empty_pca" />
+    <None Include="Resources\empty_png" />
+    <None Include="Resources\empty_tif" />
+    <None Include="Resources\empty_w64" />
+    <None Include="Resources\empty_wav" />
+    <None Include="Resources\empty_wma" />
+    <None Include="Resources\empty_wmv" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.ac3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.aif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.avi" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.mpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.wma" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.wmv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
